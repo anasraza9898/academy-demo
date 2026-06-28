@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunny Academy – Learn Today. Lead Tomorrow. | Karachi</title>
+  <meta name="description" content="Sunny Academy is a coaching academy in Karachi offering structured learning programmes for Matric, Intermediate, and skill-based courses. Enquire today." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.jpeg" type="image/jpeg" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sunny Academy – Learn Today. Lead Tomorrow." />
+  <meta property="og:description" content="A coaching academy in Karachi offering Matric, Intermediate, and skills courses with structured learning and regular progress support." />
+  <meta property="og:image" content="assets/images/og-cover.jpeg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- JSON-LD: SAMPLE / DEMO DATA ONLY — replace with verified academy information before going live -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Sunny Academy",
+    "description": "A coaching academy in Karachi offering structured learning for Matric, Intermediate, and skill-based courses.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Karachi",
+      "addressCountry": "PK"
+    },
+    "url": "#",
+    "telephone": "+92-300-1234567",
+    "openingHours": "Mo-Sa 08:00-20:00"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== SKIP LINK ===== -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== TOP INFO BAR ===== -->
+  <div class="topbar" role="complementary" aria-label="Academy information">
+    <div class="container topbar__inner">
+      <span class="topbar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Karachi, Pakistan
+      </span>
+      <span class="topbar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.58a16 16 0 0 0 5.51 5.51l.96-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.5v1.42z"/></svg>
+        +92 300 1234567 <em class="topbar__note">(Sample)</em>
+      </span>
+      <span class="topbar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Mon–Sat: 8:00 AM – 8:00 PM
+      </span>
+      <span class="topbar__item topbar__admissions">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+        Admissions Enquiries Welcome
+      </span>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand" aria-label="Sunny Academy – home">
+        <img src="assets/images/logo.jpeg" alt="Sunny Academy logo" width="40" height="40" class="navbar__logo-img" />
+        <span class="navbar__brand-text">Sunny Academy</span>
+      </a>
+
+      <nav class="navbar__nav" id="primary-nav" role="navigation" aria-label="Primary navigation">
+        <ul class="navbar__links" role="list">
+          <li><a href="index.html" class="navbar__link" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="navbar__link">About</a></li>
+          <li><a href="courses.html" class="navbar__link">Courses</a></li>
+          <li><a href="faculty.html" class="navbar__link">Faculty</a></li>
+          <li><a href="admissions.html" class="navbar__link">Admissions</a></li>
+        </ul>
+      </nav>
+
+      <a href="admissions.html" class="btn btn--gold navbar__cta">Apply Now</a>
+
+      <button
+        class="navbar__hamburger"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Open navigation menu"
+      >
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-menu__links" role="list">
+          <li><a href="index.html" class="mobile-menu__link" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="mobile-menu__link">About</a></li>
+          <li><a href="courses.html" class="mobile-menu__link">Courses</a></li>
+          <li><a href="faculty.html" class="mobile-menu__link">Faculty</a></li>
+          <li><a href="admissions.html" class="mobile-menu__link">Admissions</a></li>
+          <li><a href="admissions.html" class="btn btn--gold mobile-menu__cta">Apply Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-label="Welcome to Sunny Academy">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge badge--demo" aria-label="This is a concept demo website">Concept Demo</span>
+          <h1 class="hero__heading">
+            A Structured Path<br />
+            <span class="hero__heading--accent">to Academic Success</span>
+          </h1>
+          <p class="hero__sub">
+            Sunny Academy in Karachi offers focused coaching for Matric and Intermediate students — with small learning groups, regular assessments, and personal guidance at every step.
+          </p>
+          <div class="hero__actions">
+            <a href="courses.html" class="btn btn--primary">Explore Courses</a>
+            <a href="admissions.html" class="btn btn--outline-light">Apply for Admission</a>
+          </div>
+          <div class="hero__trust">
+            <div class="hero__trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Concept-based teaching
+            </div>
+            <div class="hero__trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Small learning groups
+            </div>
+            <div class="hero__trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Regular progress reviews
+            </div>
+          </div>
+        </div>
+        <div class="hero__image-wrap">
+          <img
+            src="assets/images/hero-students.jpeg"
+            alt="Students studying in a Sunny Academy classroom"
+            width="620"
+            height="480"
+            class="hero__image"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRUST STRIP ===== -->
+    <section class="trust-strip" aria-label="Why students choose Sunny Academy">
+      <div class="container trust-strip__inner">
+        <div class="trust-strip__item reveal">
+          <div class="trust-strip__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div>
+            <h3 class="trust-strip__title">Experienced Teaching</h3>
+            <p class="trust-strip__text">Subject specialists focused on core concept clarity</p>
+          </div>
+        </div>
+        <div class="trust-strip__item reveal">
+          <div class="trust-strip__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div>
+            <h3 class="trust-strip__title">Structured Learning</h3>
+            <p class="trust-strip__text">Planned syllabus coverage from start to exam</p>
+          </div>
+        </div>
+        <div class="trust-strip__item reveal">
+          <div class="trust-strip__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <h3 class="trust-strip__title">Progress Support</h3>
+            <p class="trust-strip__text">Regular tests and feedback to track every student</p>
+          </div>
+        </div>
+        <div class="trust-strip__item reveal">
+          <div class="trust-strip__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div>
+            <h3 class="trust-strip__title">Student-Focused</h3>
+            <p class="trust-strip__text">Individual attention in a supportive environment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COURSES PREVIEW ===== -->
+    <section class="section courses-preview" aria-labelledby="courses-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">What We Offer</span>
+          <h2 id="courses-heading" class="section__title">Courses at Sunny Academy</h2>
+          <p class="section__subtitle">From Matric to skill development — structured programmes for every stage of a student's journey in Karachi.</p>
+        </div>
+        <div class="courses-grid">
+
+          <div class="course-card reveal">
+            <div class="course-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3 class="course-card__title">Matric Science</h3>
+            <p class="course-card__desc">Physics, Chemistry, Biology, and Mathematics with a focus on strong foundational understanding and exam preparation.</p>
+            <p class="course-card__level"><strong>Suitable for:</strong> Class 9 &amp; 10 (Science)</p>
+            <a href="courses.html#matric-science" class="course-card__link">View Course <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="course-card reveal">
+            <div class="course-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="course-card__title">Matric Commerce</h3>
+            <p class="course-card__desc">Accounting, Economics, Business Studies, and Mathematics for students pursuing a commerce pathway from Class 9.</p>
+            <p class="course-card__level"><strong>Suitable for:</strong> Class 9 &amp; 10 (Commerce)</p>
+            <a href="courses.html#matric-commerce" class="course-card__link">View Course <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="course-card reveal">
+            <div class="course-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="course-card__title">Pre-Engineering</h3>
+            <p class="course-card__desc">Physics, Chemistry, and Mathematics at Intermediate level for students aiming for engineering programmes.</p>
+            <p class="course-card__level"><strong>Suitable for:</strong> Class 11 &amp; 12 (Pre-Eng)</p>
+            <a href="courses.html#pre-engineering" class="course-card__link">View Course <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="course-card reveal">
+            <div class="course-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3 class="course-card__title">Pre-Medical</h3>
+            <p class="course-card__desc">Biology, Chemistry, and Physics for students preparing for medical college entry tests and Intermediate board exams.</p>
+            <p class="course-card__level"><strong>Suitable for:</strong> Class 11 &amp; 12 (Pre-Medical)</p>
+            <a href="courses.html#pre-medical" class="course-card__link">View Course <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="course-card reveal">
+            <div class="course-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <h3 class="course-card__title">Intermediate Commerce</h3>
+            <p class="course-card__desc">Accounting, Business Studies, and Economics at the Intermediate level for students in the commerce stream.</p>
+            <p class="course-card__level"><strong>Suitable for:</strong> Class 11 &amp; 12 (Commerce)</p>
+            <a href="courses.html#inter-commerce" class="course-card__link">View Course <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="course-card reveal">
+            <div class="course-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="course-card__title">Computer &amp; Skills Courses</h3>
+            <p class="course-card__desc">Practical computer fundamentals, MS Office, and introductory programming — building workplace-ready skills.</p>
+            <p class="course-card__level"><strong>Suitable for:</strong> Matric &amp; above</p>
+            <a href="courses.html#computer-skills" class="course-card__link">View Course <span aria-hidden="true">→</span></a>
+          </div>
+
+        </div>
+        <div class="section__cta">
+          <a href="courses.html" class="btn btn--primary">View All Courses</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT PREVIEW ===== -->
+    <section class="section about-preview" aria-labelledby="about-preview-heading">
+      <div class="container about-preview__inner">
+        <div class="about-preview__image reveal">
+          <img
+            src="assets/images/about-academy.jpeg"
+            alt="Inside a Sunny Academy classroom in Karachi"
+            width="580"
+            height="420"
+            loading="lazy"
+            decoding="async"
+            class="about-preview__img"
+          />
+        </div>
+        <div class="about-preview__content reveal">
+          <span class="eyebrow">About the Academy</span>
+          <h2 id="about-preview-heading" class="section__title">Teaching with Purpose, Supporting Every Student</h2>
+          <p class="about-preview__text">
+            Sunny Academy was founded with one clear intention: to provide structured, concept-focused coaching that genuinely helps students in Karachi understand their subjects — not just pass exams.
+          </p>
+          <p class="about-preview__text">
+            We keep our learning groups small so every student gets the attention and support they need. Our faculty plan lessons carefully, monitor progress regularly, and keep parents informed throughout the academic year.
+          </p>
+          <ul class="about-preview__strengths" role="list">
+            <li class="about-preview__strength-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Concept-driven learning across all subjects
+            </li>
+            <li class="about-preview__strength-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Regular tests and written feedback
+            </li>
+            <li class="about-preview__strength-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Clear parent communication and updates
+            </li>
+            <li class="about-preview__strength-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Comfortable, focused classroom setting
+            </li>
+          </ul>
+          <a href="about.html" class="btn btn--primary">Learn More About Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS STRIP ===== -->
+    <section class="stats-section" aria-labelledby="stats-heading">
+      <div class="container">
+        <p class="stats-section__note" id="stats-heading">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Sample figures for demonstration purposes only
+        </p>
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <span class="stat-card__number" data-target="8" aria-label="8 or more">8+</span>
+            <span class="stat-card__label">Course Categories</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-card__number" data-target="3">3</span>
+            <span class="stat-card__label">Sample Faculty Profiles</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-card__number" data-target="6">6</span>
+            <span class="stat-card__label">Learning Days Per Week</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-card__number">Regular</span>
+            <span class="stat-card__label">Progress Reviews</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE ===== -->
+    <section class="section why-section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Our Approach</span>
+          <h2 id="why-heading" class="section__title">Why Choose Sunny Academy?</h2>
+          <p class="section__subtitle">We focus on what actually helps students improve — structure, attention, and consistent feedback.</p>
+        </div>
+        <div class="why-grid">
+
+          <div class="why-card reveal">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3 class="why-card__title">Concept-Based Learning</h3>
+            <p class="why-card__text">We teach the reasoning behind each topic so students truly understand — not just memorise answers for the exam.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="why-card__title">Small Learning Groups</h3>
+            <p class="why-card__text">Every student receives personal attention. Our teachers know where each individual student stands and how to help them move forward.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3 class="why-card__title">Regular Assessments</h3>
+            <p class="why-card__text">Frequent topic tests and practice sessions help identify weak areas early so they can be addressed before exams.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.58a16 16 0 0 0 5.51 5.51l.96-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.5v1.42z"/></svg>
+            </div>
+            <h3 class="why-card__title">Parent Communication</h3>
+            <p class="why-card__text">We keep parents informed about their child's attendance, progress, and any areas needing extra attention during the term.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <h3 class="why-card__title">Academic Guidance</h3>
+            <p class="why-card__text">Students get advice on subject selection, study strategies, and planning their academic path beyond the current class.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="why-card__title">Supportive Faculty</h3>
+            <p class="why-card__text">Our teachers are approachable, patient, and genuinely invested in the growth and confidence of every student they teach.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LEARNING PROCESS ===== -->
+    <section class="section process-section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">How It Works</span>
+          <h2 id="process-heading" class="section__title">Your Learning Journey</h2>
+          <p class="section__subtitle">A clear, simple process from first enquiry to ongoing classroom support.</p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="process-step__number" aria-hidden="true">1</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Course Enquiry</h3>
+              <p class="process-step__text">Contact us by phone, WhatsApp, or visit the academy to ask about the right course for your current class and subjects.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-step__number" aria-hidden="true">2</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Student Assessment</h3>
+              <p class="process-step__text">A brief introductory session helps us understand the student's current level and match them to the right learning group.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-step__number" aria-hidden="true">3</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Class Placement</h3>
+              <p class="process-step__text">Once admitted, the student joins a scheduled class. Timings are discussed during the enquiry process to find the best fit.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-step__number" aria-hidden="true">4</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Progress Monitoring</h3>
+              <p class="process-step__text">Regular tests and teacher feedback ensure every student stays on track and parents are kept updated throughout the term.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FACULTY PREVIEW ===== -->
+    <section class="section faculty-preview" aria-labelledby="faculty-preview-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Our Teachers</span>
+          <h2 id="faculty-preview-heading" class="section__title">Meet the Faculty</h2>
+          <p class="section__subtitle">Dedicated subject specialists committed to supporting every student's academic progress.</p>
+        </div>
+        <div class="faculty-grid">
+
+          <div class="faculty-card reveal">
+            <div class="faculty-card__img-wrap">
+              <img
+                src="assets/images/teacher-1.jpeg"
+                alt="Sample faculty member — science and mathematics teacher"
+                width="260"
+                height="280"
+                loading="lazy"
+                decoding="async"
+                class="faculty-card__img"
+              />
+              <span class="badge badge--small badge--demo" aria-label="Demo profile — sample content">Demo Profile</span>
+            </div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__name">Mr. Ahsan Raza <em class="faculty-card__sample">(Sample)</em></h3>
+              <p class="faculty-card__subject">Physics &amp; Mathematics</p>
+              <p class="faculty-card__desc">An approachable teacher known for breaking complex topics into clear, step-by-step explanations that students can follow with confidence.</p>
+            </div>
+          </div>
+
+          <div class="faculty-card reveal">
+            <div class="faculty-card__img-wrap">
+              <img
+                src="assets/images/teacher-2.jpeg"
+                alt="Sample faculty member — chemistry and biology teacher"
+                width="260"
+                height="280"
+                loading="lazy"
+                decoding="async"
+                class="faculty-card__img"
+              />
+              <span class="badge badge--small badge--demo" aria-label="Demo profile — sample content">Demo Profile</span>
+            </div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__name">Ms. Sana Mirza <em class="faculty-card__sample">(Sample)</em></h3>
+              <p class="faculty-card__subject">Chemistry &amp; Biology</p>
+              <p class="faculty-card__desc">Brings a calm and patient teaching style to science, helping students build solid understanding through practical examples and clear notes.</p>
+            </div>
+          </div>
+
+          <div class="faculty-card reveal">
+            <div class="faculty-card__img-wrap">
+              <img
+                src="assets/images/teacher-3.jpeg"
+                alt="Sample faculty member — commerce and accounts teacher"
+                width="260"
+                height="280"
+                loading="lazy"
+                decoding="async"
+                class="faculty-card__img"
+              />
+              <span class="badge badge--small badge--demo" aria-label="Demo profile — sample content">Demo Profile</span>
+            </div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__name">Mr. Tariq Mehmood <em class="faculty-card__sample">(Sample)</em></h3>
+              <p class="faculty-card__subject">Accounting &amp; Commerce</p>
+              <p class="faculty-card__desc">Dedicated to making accounting accessible through practice-based sessions and a structured approach to solving numerical problems.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="section__cta">
+          <a href="faculty.html" class="btn btn--outline-dark">View Full Faculty Page</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ENVIRONMENT GALLERY ===== -->
+    <section class="section gallery-section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Our Environment</span>
+          <h2 id="gallery-heading" class="section__title">A Space Built for Learning</h2>
+          <p class="section__subtitle">Comfortable, organised classrooms where students can focus and grow.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item--large reveal">
+            <img
+              src="assets/images/classroom-1.jpeg"
+              alt="A well-organised Sunny Academy classroom with seating and a whiteboard"
+              width="640"
+              height="420"
+              loading="lazy"
+              decoding="async"
+              class="gallery-img"
+            />
+          </div>
+          <div class="gallery-item reveal">
+            <img
+              src="assets/images/classroom-2.jpeg"
+              alt="Another classroom view at Sunny Academy in Karachi"
+              width="380"
+              height="280"
+              loading="lazy"
+              decoding="async"
+              class="gallery-img"
+            />
+          </div>
+          <div class="gallery-item reveal">
+            <img
+              src="assets/images/students-group.jpeg"
+              alt="A group of students during a class session at Sunny Academy"
+              width="380"
+              height="280"
+              loading="lazy"
+              decoding="async"
+              class="gallery-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Student Feedback</span>
+          <h2 id="testimonials-heading" class="section__title">What Students Are Saying</h2>
+        </div>
+        <div class="demo-banner demo-banner--subtle" role="note" aria-label="Demo content notice">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          The testimonials below are sample/placeholder content created for this concept demo. They do not represent actual student reviews.
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-card__text">"The way Physics is taught here made concepts I always found confusing suddenly very clear. The practice tests helped me know exactly where I needed more work."</p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__name">— Sample Student, Class 11</span>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-card__text">"As a parent, I appreciate that the teachers genuinely pay attention to each student. We receive regular updates and feel involved in our child's progress."</p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__name">— Sample Parent</span>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-card__text">"Accounting made sense to me only after I joined this class. The teacher explains each step slowly and makes sure everyone is following before moving on."</p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__name">— Sample Student, Matric Commerce</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq-section" aria-labelledby="faq-heading">
+      <div class="container faq-section__inner">
+        <div class="section__header">
+          <span class="eyebrow">Common Questions</span>
+          <h2 id="faq-heading" class="section__title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list" id="home-faq">
+
+          <div class="faq-item">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-1"
+            >
+              Which classes and subjects are offered?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-1" hidden>
+              <p>Sunny Academy currently offers coaching for Matric (Class 9–10) in both Science and Commerce streams, Intermediate (Class 11–12) in Pre-Engineering, Pre-Medical, and Commerce, as well as English language and Computer skills courses. Please contact us directly to confirm current availability.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-2"
+            >
+              How can a student apply?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-2" hidden>
+              <p>You can apply by visiting the academy during office hours, sending a WhatsApp message, or filling in the enquiry form on our Admissions page. Our team will arrange a brief introductory session to assess the student's level and recommend a suitable class group.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-3"
+            >
+              Are class timings flexible?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-3" hidden>
+              <p>We offer morning, afternoon, and evening sessions during the week. Timings vary by course and availability. During your enquiry, we will let you know which sessions are available for your chosen course and try to find a time that suits your schedule.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-4"
+            >
+              Are regular tests conducted?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-4" hidden>
+              <p>Yes. Chapter-based tests and periodic revision assessments are a regular part of our teaching approach. These help us identify where each student needs more support and keep them prepared and confident as the exam date approaches.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-5"
+            >
+              How can parents receive progress updates?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-5" hidden>
+              <p>Parents are welcome to contact the academy at any time to receive an update on their child's attendance and performance. We also share test results and notes directly with parents through WhatsApp and brief in-person meetings on request.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="section cta-section" aria-labelledby="cta-heading">
+      <div class="container cta-section__inner">
+        <div class="cta-section__content">
+          <h2 id="cta-heading" class="cta-section__title">Ready to Get Started?</h2>
+          <p class="cta-section__text">Enquire about admission today and take the first step towards a focused, structured academic year at Sunny Academy in Karachi.</p>
+          <div class="cta-section__actions">
+            <a href="admissions.html" class="btn btn--gold">Apply for Admission</a>
+            <a
+              href="https://wa.me/923001234567?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Sunny%20Academy%20admissions."
+              class="btn btn--outline-light"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send a WhatsApp message to Sunny Academy"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              WhatsApp Enquiry
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <div class="footer__col footer__col--brand">
+        <a href="index.html" class="footer__brand-link" aria-label="Sunny Academy home">
+          <img src="assets/images/logo.jpeg" alt="Sunny Academy" width="40" height="40" loading="lazy" class="footer__logo" />
+          <span class="footer__brand-name">Sunny Academy</span>
+        </a>
+        <p class="footer__desc">A structured coaching academy in Karachi offering focused programmes for Matric, Intermediate, and skill-based courses.</p>
+        <p class="footer__tagline"><em>Learn Today. Lead Tomorrow.</em></p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Quick Links</h3>
+        <ul class="footer__links" role="list">
+          <li><a href="index.html" class="footer__link">Home</a></li>
+          <li><a href="about.html" class="footer__link">About</a></li>
+          <li><a href="courses.html" class="footer__link">Courses</a></li>
+          <li><a href="faculty.html" class="footer__link">Faculty</a></li>
+          <li><a href="admissions.html" class="footer__link">Admissions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Courses</h3>
+        <ul class="footer__links" role="list">
+          <li><a href="courses.html#matric-science" class="footer__link">Matric Science</a></li>
+          <li><a href="courses.html#matric-commerce" class="footer__link">Matric Commerce</a></li>
+          <li><a href="courses.html#pre-engineering" class="footer__link">Pre-Engineering</a></li>
+          <li><a href="courses.html#pre-medical" class="footer__link">Pre-Medical</a></li>
+          <li><a href="courses.html#inter-commerce" class="footer__link">Intermediate Commerce</a></li>
+          <li><a href="courses.html#computer-skills" class="footer__link">Computer &amp; Skills</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Contact <em class="footer__sample-note">(Sample)</em></h3>
+        <address class="footer__contact">
+          <p class="footer__contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Sample Area, Karachi, Pakistan
+          </p>
+          <p class="footer__contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.58a16 16 0 0 0 5.51 5.51l.96-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.5v1.42z"/></svg>
+            <a href="tel:+923001234567" class="footer__link">+92 300 1234567</a>
+          </p>
+          <p class="footer__contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            <a href="https://wa.me/923001234567" class="footer__link" target="_blank" rel="noopener noreferrer">WhatsApp Enquiry</a>
+          </p>
+          <p class="footer__contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Mon–Sat: 8:00 AM – 8:00 PM
+          </p>
+        </address>
+        <div class="footer__social" aria-label="Social media placeholders">
+          <a href="#" class="footer__social-link" aria-label="Facebook (link not yet set up)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Instagram (link not yet set up)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="YouTube (link not yet set up)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#fff" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copyright">
+          &copy; <span id="footer-year">2024</span> Sunny Academy, Karachi. All rights reserved.
+        </p>
+        <p class="footer__disclaimer">
+          This is a concept demo website. All faculty names, statistics, testimonials, and contact details shown are sample/placeholder content only.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
