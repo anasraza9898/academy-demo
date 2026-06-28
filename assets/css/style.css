@@ -1009,7 +1009,140 @@ p  { max-width: 68ch; color: var(--text-muted); }
 }
 .filter-btn:hover { border-color: var(--blue-500); color: var(--blue-700); }
 .filter-btn.is-active { background: var(--blue-700); color: var(--white); border-color: var(--blue-700); }
+/* Detailed course cards */
+.courses-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
 
+.course-card-detail {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.4rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.course-card-detail__header {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  margin-bottom: 1rem;
+}
+
+.course-card-detail__header .course-card__icon {
+  margin-bottom: 0;
+}
+
+.course-card-detail__category {
+  display: block;
+  margin-bottom: .2rem;
+  color: var(--blue-700);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.course-card-detail__title {
+  font-size: 1.1rem;
+}
+
+.course-card-detail__desc {
+  margin-bottom: 1rem;
+  font-size: .9rem;
+  line-height: 1.65;
+}
+
+.course-card-detail__meta {
+  margin-bottom: 1.2rem;
+  border-top: 1px solid var(--border);
+}
+
+.course-meta-row {
+  display: grid;
+  grid-template-columns: minmax(75px, 95px) 1fr;
+  gap: .75rem;
+  padding-block: .65rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.course-meta-label {
+  color: var(--text-dark);
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.course-meta-value {
+  min-width: 0;
+  color: var(--text-muted);
+  font-size: .84rem;
+  overflow-wrap: anywhere;
+}
+
+.course-card-detail__btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .courses-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+/* Course support cards */
+.support-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.support-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.support-card__icon {
+  width: 48px;
+  height: 48px;
+  background: var(--blue-50);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-700);
+  margin-bottom: .9rem;
+}
+
+.support-card__title {
+  font-size: 1rem;
+  margin-bottom: .35rem;
+}
+
+.support-card__text {
+  font-size: .88rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .support-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
 /* ============================================================
    29. ADMISSION FORM
    ============================================================ */
@@ -1078,6 +1211,7 @@ textarea.form-control { resize: vertical; min-height: 110px; }
 }
 .form-success.is-visible { display: block; }
 
+
 /* ============================================================
    30. FACULTY PAGE SPECIFIC
    ============================================================ */
@@ -1109,7 +1243,76 @@ textarea.form-control { resize: vertical; min-height: 110px; }
   font-weight: 600;
   color: var(--blue-700);
 }
+/* ============================================================
+   30. FACULTY PAGE SPECIFIC
+   ============================================================ */
 
+.faculty-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.faculty-detail-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-detail-card__img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.faculty-detail-card__body {
+  padding: 1.5rem;
+}
+
+.faculty-detail-card__name {
+  font-size: 1.15rem;
+  margin-bottom: .25rem;
+}
+
+.faculty-detail-card__qual {
+  font-size: .82rem;
+  color: var(--text-muted);
+  margin-bottom: .4rem;
+}
+
+.faculty-detail-card__subject {
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--blue-700);
+  margin-bottom: .8rem;
+}
+
+.availability-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-top: .75rem;
+}
+
+.availability-badge {
+  padding: .28rem .7rem;
+  background: var(--blue-50);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--blue-700);
+}
+
+@media (min-width: 640px) {
+  .faculty-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 /* ============================================================
    31. ABOUT PAGE
    ============================================================ */
@@ -1137,6 +1340,116 @@ textarea.form-control { resize: vertical; min-height: 110px; }
 }
 .value-card__title { font-size: .97rem; margin-bottom: .35rem; }
 .value-card__text { font-size: .87rem; margin: 0; }
+/* Mission cards */
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.mission-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.mission-card__icon {
+  width: 52px;
+  height: 52px;
+  background: var(--blue-50);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-700);
+  margin-bottom: 1rem;
+}
+
+.mission-card__title {
+  font-size: 1.1rem;
+  margin-bottom: .45rem;
+}
+
+.mission-card__text {
+  font-size: .9rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Teaching approach */
+.approach-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.approach-step {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.approach-step__num {
+  color: var(--gold-500);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: .55rem;
+}
+
+.approach-step__title {
+  font-size: 1rem;
+  margin-bottom: .4rem;
+}
+
+.approach-step__text {
+  font-size: .88rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Environment section */
+.env-section__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.env-section__gallery {
+  display: grid;
+  gap: 1rem;
+}
+
+.env-section__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.env-section__img--top {
+  height: 280px;
+}
+
+.env-section__img--bottom {
+  height: 220px;
+}
+
+@media (min-width: 640px) {
+  .mission-grid,
+  .approach-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .env-section__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 /* ============================================================
    32. MAP / CONTACT LAYOUT

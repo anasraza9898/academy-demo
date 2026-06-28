@@ -14,6 +14,19 @@
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"EducationalOrganization",
+ "name":"Sunny Academy",
+ "url":"https://anasraza9898.github.io/academy-demo/admissions.html",
+ "address":{
+   "@type":"PostalAddress",
+   "addressLocality":"Karachi",
+   "addressCountry":"PK"
+ }
+}
+</script>
 </head>
 <body>
 
@@ -45,7 +58,14 @@
   <header class="navbar" id="navbar" role="banner">
     <div class="container navbar__inner">
       <a href="index.html" class="navbar__brand" aria-label="Sunny Academy – home">
-        <img src="assets/images/logo.jpeg" alt="Sunny Academy logo" width="40" height="40" class="navbar__logo-img" />
+        <img
+src="assets/images/logo.jpeg"
+alt="Sunny Academy logo"
+width="40"
+height="40"
+loading="eager"
+decoding="async"
+class="navbar__logo-img">
         <span class="navbar__brand-text">Sunny Academy</span>
       </a>
       <nav class="navbar__nav" id="primary-nav" role="navigation" aria-label="Primary navigation">
@@ -147,6 +167,7 @@
             height="400"
             loading="lazy"
             decoding="async"
+            fetchpriority="low"
             class="about-preview__img"
           />
         </div>
@@ -411,7 +432,10 @@
     <div class="container footer__inner">
       <div class="footer__col footer__col--brand">
         <a href="index.html" class="footer__brand-link" aria-label="Sunny Academy home">
-          <img src="assets/images/logo.jpeg" alt="Sunny Academy" width="40" height="40" loading="lazy" class="footer__logo" />
+          <img src="assets/images/logo.jpeg" alt="Sunny Academy" width="40" height="40"
+          loading="lazy" 
+          decoding="async" 
+          class="footer__logo" />
           <span class="footer__brand-name">Sunny Academy</span>
         </a>
         <p class="footer__desc">A structured coaching academy in Karachi offering focused programmes for Matric, Intermediate, and skill-based courses.</p>
